@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>Linea Italiana — colorazione vegetale e parrucchieri a Corso Vercelli, Milano</title>
 <meta name="description" content="Linea Italiana, parrucchieri in Via Cimarosa 3 (Corso Vercelli/Wagner) a Milano, dal 1996: la colorazione vegetale a base di henné, indaco e cassia — il colore che viene dalla natura. Taglio e cura, con delicatezza e competenza.">
 <link rel="canonical" href="https://rotenzark.github.io/linea-italiana/">
@@ -15,9 +16,7 @@
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script type="application/ld+json">
 {
@@ -37,11 +36,29 @@
     "postalCode": "20144",
     "addressCountry": "IT"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 45.4659586, "longitude": 9.1593166 },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "37" },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4659586,
+    "longitude": 9.1593166
+  },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:30", "closes": "19:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:30", "closes": "18:30" }
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:30",
+      "closes": "18:30"
+    }
   ]
 }
 </script>
@@ -228,7 +245,7 @@
       </div>
     </div>
     <div class="dove__map reveal">
-      <iframe title="Mappa: Linea Italiana, Via Cimarosa 3, Milano" src="https://www.google.com/maps?q=Linea+Italiana+Parrucchieri,+Via+Domenico+Cimarosa+3,+20144+Milano&output=embed" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe title="Mappa: Linea Italiana, Via Cimarosa 3, Milano" src="https://www.google.com/maps?q=Linea+Italiana+Parrucchieri,+Via+Domenico+Cimarosa+3,+20144+Milano&output=embed" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/place/Linea+Italiana+Parrucchieri/@45.4659586,9.1593166,17z" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </div>
 </section>
@@ -253,6 +270,7 @@
     <p class="foot-dove" data-i18n="foot.dove">Via Domenico Cimarosa 3, 20144 Milano · <a href="tel:+39024812624">02 481 2624</a></p>
     <p class="foot-demo" data-i18n="foot.demo">Sito dimostrativo (concept) realizzato da Bespoke Studio a partire da dati e foto pubblici — non è il sito ufficiale dell'attività.</p>
   </div>
+  <p class="privacy-link"><a href="privacy.html">Privacy</a></p>
 </footer>
 
 <div class="bar" aria-hidden="true">
@@ -266,5 +284,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
